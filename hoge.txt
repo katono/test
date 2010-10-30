@@ -1,6 +1,6 @@
 hoge
 ほげ
+aaaaaaa
 master
 hotfix
 branch1です。
-xxx
