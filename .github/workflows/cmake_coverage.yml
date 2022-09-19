@@ -40,9 +40,7 @@ jobs:
       run: ctest -C ${{env.BUILD_TYPE}} -V
       
     - name: Coverage
-      run: |
-        lcov -d . -c -o coverage.info
-        genhtml -o coverage_report --num-spaces 4 -s --legend coverage.info
+      run: lcov -d . -c -o coverage.info
 
     - name: Coveralls
       uses: coverallsapp/github-action@master
