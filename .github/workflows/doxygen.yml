@@ -24,4 +24,4 @@ jobs:
           folder: html
           token: ${{ secrets.TOKEN_TEST_GH_PAGES }}
           repository-name: katono/test_gh_pages
-          branch: gh_pages
+          branch: master
