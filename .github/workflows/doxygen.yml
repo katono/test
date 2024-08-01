@@ -17,6 +17,8 @@ jobs:
 
       - name: Run Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.8
+        with:
+          additional-packages: plantuml
 
       - name: Create .nojekyll
         run: |
@@ -29,6 +31,7 @@ jobs:
           echo ls -la html_new
           ls -la html_new
           touch html_new/.nojekyll
+          find /usr/ -name plantuml.jar
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
