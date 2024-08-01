@@ -25,14 +25,15 @@ jobs:
           ls -la
           echo ls -la html
           ls -la html
-          touch .nojekyll
-          chmod +w html
-          touch ${{github.workspace}}/html/.nojekyll
+          cp html html_new
+          echo ls -la html_new
+          ls -la html_new
+          touch html_new/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: html
+          folder: html_new
           token: ${{ secrets.TOKEN_TEST_GH_PAGES }}
           repository-name: katono/test_gh_pages
           branch: master
