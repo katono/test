@@ -1,11 +1,19 @@
 #include <cstdio>
 
 /*!
+ * @brief hello, worldを出力する
+ */
+void hello()
+{
+	std::printf("hello, world\n");
+}
+
+/*!
  * @brief main関数
  * @return 0を返す
  */
 int main()
 {
-	std::printf("hello, world\n");
+	hello();
 	return 0;
 }
