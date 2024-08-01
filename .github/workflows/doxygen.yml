@@ -22,6 +22,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: html
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN_TEST_GH_PAGES }}
           repository-name: katono/test_gh_pages
           branch: gh_pages
