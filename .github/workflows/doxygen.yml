@@ -17,3 +17,11 @@ jobs:
 
       - name: Run Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.8
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: html
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository-name: ${{ env.DEPLOYREPO }}
+          branch: master
