@@ -25,6 +25,7 @@ jobs:
           ls
           ls html
           touch .nojekyll
+          chmod +w html
           touch ${{github.workspace}}/html/.nojekyll
 
       - name: Deploy
