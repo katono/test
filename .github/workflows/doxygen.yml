@@ -31,7 +31,6 @@ jobs:
           echo ls -la html_new
           ls -la html_new
           touch html_new/.nojekyll
-          find /usr/ -name plantuml.jar
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
