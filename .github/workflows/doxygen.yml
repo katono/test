@@ -23,5 +23,5 @@ jobs:
         with:
           folder: html
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository-name: ${{ env.DEPLOYREPO }}
-          branch: master
+          repository-name: katono/test_gh_pages
+          branch: gh_pages
