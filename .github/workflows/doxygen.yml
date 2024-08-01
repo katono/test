@@ -18,6 +18,9 @@ jobs:
       - name: Run Doxygen Action
         uses: mattnotmitt/doxygen-action@1.9.8
 
+      - name: Create .nojekyll
+        run: touch html/.nojekyll
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
