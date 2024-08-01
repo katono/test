@@ -22,8 +22,9 @@ jobs:
         run: |
           pwd
           echo ${{github.workspace}}
-          ls
-          ls html
+          ls -la
+          echo ls -la html
+          ls -la html
           touch .nojekyll
           chmod +w html
           touch ${{github.workspace}}/html/.nojekyll
